@@ -24,7 +24,7 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
-          ref: $GITHUB_REF_NAME
+          ref: ${{ github.ref }}
 
       # Runs a single command using the runners shell
       - name: Show current branch running workflow manually
